@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cover Slider"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/text_bg"
+        android:gravity="center_horizontal">
+
+    </TextView>
+
+
+    <com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:icvp_center_page_scale_offset="30dp"
+        app:icvp_interpolator="@android:anim/accelerate_decelerate_interpolator"
+        app:icvp_scroll_duration="250"
+        app:icvp_max_page_scale="0.8"
+        app:icvp_min_page_scale="0.55"
+        app:icvp_min_page_scale_offset="5dp"
+        app:icvp_medium_scaled="false"
+
+        >
+    </com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager>
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Swipe"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/text_bg"
+        android:gravity="center_horizontal">
+
+    </TextView>
+
+
+</RelativeLayout>
